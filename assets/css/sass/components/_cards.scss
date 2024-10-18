@@ -1,0 +1,48 @@
+.cards-body{
+  display: grid;
+  gap: 15px;
+  grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
+  width: 100%;
+  .card{
+    align-items: center;
+    border-left: solid 5px #abb1f6;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 4px 4px 8px rgba($color: $principal, $alpha: 0.2);
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    cursor: default;
+    transition: all 0.2s ease;
+    &:hover{
+      background: #cbd0fa;
+      border-color: #8b8aef;
+      .icono{
+        color: $principal;
+      }
+    }
+    .texto{
+      .titulo{
+        font-size: 0.9rem;
+        margin-bottom: 7px;
+      }
+      .numero{
+        font-size: 1.8rem;
+        font-weight: 600;
+        margin-bottom: 7px;
+      }
+      a{
+        font-size: 0.8rem;
+        text-decoration: none;
+        color: rgba($color: #000000, $alpha: 0.5);
+        &:hover{
+          text-decoration: underline;
+          color: $principal;
+        }
+      }
+    }
+    .icono{
+      font-size: 2rem;
+    }
+  }
+}

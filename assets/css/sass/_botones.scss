@@ -1,0 +1,45 @@
+@mixin tipo-boton($color: #47389b){
+  background: rgba($color: $color, $alpha: 0.85);
+  border: solid 1px transparent;
+  border-radius: 3px;
+  color: rgba($color: #FFF, $alpha: 0.85);
+  cursor: pointer;
+  outline: solid 1px transparent;
+  padding: 8px;
+  transition: all 0.2s ease;
+  &:hover{
+    background: $color;
+    color: white;
+  }
+  &:focus{
+    outline: solid 3px rgba($color: $color, $alpha: 0.45);
+  }
+  &.boton-sm{
+    font-size: 0.7rem;
+    padding: 6px;
+  }
+  &.linea{
+    background: white;
+    color: rgba($color: $color, $alpha: 0.9);
+    border: solid 1px rgba($color: $color, $alpha: 0.9);
+    &:hover{
+      background: $color;
+      color: white;
+    }
+  }
+}
+.boton-primario{
+  @include tipo-boton(#47389b);
+}
+.boton-info{
+  @include tipo-boton(#38a3a5);
+}
+.boton-rojo{
+  @include tipo-boton(#f72585);
+}
+.boton-amarillo{
+  @include tipo-boton(#f77f00);
+}
+.boton-plomo{
+  @include tipo-boton(#6c757d);
+}

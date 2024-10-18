@@ -1,0 +1,76 @@
+.main{
+  color: $texto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 15px;
+  height: 100%;
+  width: 100%;
+  .header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    .titulo{
+      font-size: 1.3rem;
+      font-weight: 500;
+    }
+    .opciones{
+      display: flex;
+      gap: 10px;
+      .configurar-header{
+        align-items: center;
+        border-radius: 5px;
+        background: $secundario;
+        color: white;
+        display: flex;
+        height: 34px;
+        justify-content: center;
+        text-decoration: none;
+        transition: all 0.2s ease;
+        box-shadow: 2px 2px 8px rgba($color: $principal, $alpha: 0.5);
+        width: 34px;
+        &:hover{
+          transform: scale(1.05);
+        }
+      }
+    }
+    .buscador{
+      position: relative;
+      input{
+        border: solid 1px rgba($color: #000000, $alpha: 0.3);
+        border-radius: 4px;
+        box-shadow: 2px 2px 8px rgba($color: $principal, $alpha: 0.5);
+        outline: solid 0px transparent;
+        padding: 8px 10px 8px 35px;
+        max-width: 230px;
+        min-width: 180px;
+        transition: all 0.2s ease;
+        &:hover{
+          border-color: rgba($color: $principal, $alpha: 0.9);
+        }
+        &:focus{
+          border-color: $principal;
+          outline: solid 3px rgba($color: $secundario, $alpha: 0.5);
+          &~.icono{
+            color: $secundario;
+          }
+        }
+      }
+      .icono{
+        position: absolute;
+        left: 10px;
+        top: 50%;
+        transform: translateY(-50%);
+        color: rgba($color: #000000, $alpha: 0.6);
+      }
+      
+    }
+  }
+  .main-body{
+    flex-direction: column;
+    flex: 1;
+    gap: 10px;
+    display: flex;
+  }
+}

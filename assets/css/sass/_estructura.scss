@@ -1,0 +1,10 @@
+body{
+  display: grid;
+  grid-template-columns: 240px auto;
+  .left-bar{
+    background: $principal;
+  }
+  .main{
+    background: $main;
+  }
+}

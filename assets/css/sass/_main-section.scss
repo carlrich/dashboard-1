@@ -1,0 +1,10 @@
+.main-section{
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: #8b8aef #cbd0fa;
+  font-size: 0.95rem;
+  padding: 10px 15px;
+  &.escritorio{
+    max-height: 380px;
+  }
+}

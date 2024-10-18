@@ -1,0 +1,73 @@
+.left-bar{
+  position: relative;
+  .logo{
+    color: white;
+    display: flex;
+    font-size: 1.3rem;
+    gap: 10px;
+    padding: 15px;
+    .texto{
+      font-weight: 400;
+    }
+  }
+  nav{
+    ul{
+      list-style: none;
+      li{
+        a{
+          color: #abb1f6;
+          display: grid;
+          grid-template-columns: 30px auto;
+          padding: 15px;
+          text-decoration: none;
+          width: 100%;
+          transition: all 0.3s ease;
+          &.active{
+            background: #47389b;
+            color: white;
+          }
+          &:hover{
+            background: #47389b;
+            color: white;
+          }
+        }
+      }
+    }
+  }
+  .card-user{
+    align-items: center;
+    background: #47389b;
+    border-radius: 8px;
+    bottom: 10px;
+    display: flex;
+    left: 10px;
+    gap: 10px;
+    min-height: 80px;
+    padding: 10px;
+    position: absolute;
+    width: 215px;
+    .foto{
+      background: $principal;
+      border-radius: 50%;
+      height: 45px;
+      width: 45px;
+      img{
+        border-radius: 50%;
+        object-fit: cover;
+        height: 45px;
+        width: 45px;
+      }
+    }
+    .texto{
+      color: #abb1f6;
+      font-size: 0.8rem;
+      .nombre{
+        font-weight: 500;
+        margin-bottom: 4px;
+      }
+      .cargo{
+        font-size: 0.7rem;
+      }
+    }
+  }
+}

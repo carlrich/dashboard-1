@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script src="https://kit.fontawesome.com/6a4bedafcb.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div class="left-bar">
+    <div class="logo">
+      <div class="icono"><i class="fa-solid fa-truck-fast"></i></div>
+      <div class="texto">Tienda Torres</div>
+    </div>
+    <nav>
+      <ul>
+        <li>
+          <a href="" class="active">
+            <div class="icono"><i class="fa-solid fa-house"></i></div>
+            <div class="texto">Escritorio</div>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <div class="icono"><i class="fa-solid fa-shirt"></i></div>
+            <div class="texto">Ropas</div>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <div class="icono"><i class="fa-solid fa-cart-plus"></i></div>
+            <div class="texto">Alquiler</div>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <div class="icono"><i class="fa-solid fa-gear fa-spin"></i></div>
+            <div class="texto">Configuración</div>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <div class="icono"><i class="fa-solid fa-circle-info"></i></div>
+            <div class="texto">Acerca de</div>
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <div class="card-user">
+      <div class="foto">
+        <img src="assets/img/user.jpg " alt="">
+      </div>
+      <div class="texto">
+        <div class="nombre">C. Torres Almonacid</div>
+        <div class="cargo">Administrador</div>
+      </div>
+    </div>
+  </div>
+  <div class="main">
+    <div class="header">
+      <div class="titulo">
+        Dashboard Administrador
+      </div>
+      <div class="opciones">
+        <div class="buscador">
+          <input type="search" name="buscar" id="buscar" placeholder="Escribe algo para buscar">
+          <label for="buscar" class="icono"><i class="fa-solid fa-search"></i></label>
+        </div>
+        <a href="#" class="configurar-header">
+          <!-- <i class="fa-solid fa-gear fa-spin"></i> -->
+          <i class="fa-solid fa-user-gear"></i>
+        </a>
+      </div>
+    </div>
+    <!-- Principal inicio -->
+    <div class="main-body">
+      <div class="cards-body">
+        <div class="card">
+          <div class="texto">
+            <div class="titulo">Ganacia total</div>
+            <div class="numero">S/ 1232.00</div>
+            <a href="#">Ver más</a>
+          </div>
+          <div class="icono">
+            <i class="fa-solid fa-sack-dollar"></i>
+          </div>
+        </div>
+        <div class="card">
+          <div class="texto">
+            <div class="titulo">Ropas</div>
+            <div class="numero">15</div>
+            <a href="#">Ver más</a>
+          </div>
+          <div class="icono">
+            <i class="fa-solid fa-shirt"></i>
+          </div>
+        </div>
+        <div class="card">
+          <div class="texto">
+            <div class="titulo">Alquilere hoy</div>
+            <div class="numero">2</div>
+            <a href="#">Ver más</a>
+          </div>
+          <div class="icono">
+            <i class="fa-solid fa-cart-plus"></i>
+          </div>
+        </div>
+      </div>
+      <div class="section-body">
+        <div class="titulo-section">
+          Alquiler realizados hoy
+          <div class="buttons">
+            <button class="boton-primario boton-sm">Nuevo alquiler</button>
+            <button class="boton-info boton-sm">Mas información</button>
+            <button class="boton-rojo boton-sm">Boton rojo</button>
+            <button class="boton-amarillo boton-sm">Boton rojo</button>
+            <button class="boton-amarillo linea boton-sm">Boton rojo</button>
+            <button class="boton-plomo boton-sm">Boton rojo</button>
+          </div>
+        </div>
+        <div class="main-section escritorio">
+          <div class="table">
+            <table>
+              <thead>
+                <tr>
+                  <th>#</th>
+                  <th>Nombre y Apellidos</th>
+                  <th>Prenda</th>
+                  <th>Fecha</th>
+                  <th>Hora</th>
+                  <th>Estado</th>
+                  <th>Acciones</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th>1</th>
+                  <td>Carlos Richard Torres Almonacid</td>
+                  <td>Terno - Color Negro</td>
+                  <td>16 de Octubre</td>
+                  <td>07:03 PM</td>
+                  <td>
+                    <span class="amarillo">Pendiente</span>
+                    <!-- <span class="verde">Entregado</span> -->
+                    <!-- <span class="rojo">Fuera de tiempo</span> -->
+                  </td>
+                  <td>
+                    <button class="boton-amarillo linea boton-sm">
+                      <i class="fa-solid fa-pen"></i>
+                    </button>
+                    <button class="boton-rojo linea boton-sm">
+                      <i class="fa-solid fa-trash"></i>
+                    </button>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Principal final -->
+  </div>
+  <script src="assets/js/index.js"></script>
+</body>
+</html>
